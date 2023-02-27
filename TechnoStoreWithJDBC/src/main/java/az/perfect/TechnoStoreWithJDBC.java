@@ -7,6 +7,7 @@ package az.perfect;
 
 import az.perfect.config.Context;
 import az.perfect.dao.inter.ProductDaoInter;
+import az.perfect.dao.inter.StoreDaoInter;
 
 /**
  *
@@ -15,8 +16,8 @@ import az.perfect.dao.inter.ProductDaoInter;
 public class TechnoStoreWithJDBC {
 
     public static void main(String[] args) {
-        ProductDaoInter pdao = Context.instanceProductDao();
+        StoreDaoInter sdao = Context.instanceStoreDao();
         
-        System.out.println(pdao.getProductById(2));
+        System.out.println(sdao.getStoreById(2));
     }
 }
